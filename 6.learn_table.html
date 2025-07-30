@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    
     <style>
-        table tr, td, th{
+        table, tr, td, th{
             border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
             
         }
     </style>
@@ -16,13 +18,13 @@
     
     <table>
         <tr>
-            <td>State of health</td>
-            <td>Fasting value</td>
-            <td></td>
+            <td rowspan="2">State of health</td>
+            <td colspan="2">Fasting value</td>
+            
             <td>After eating</td>
         </tr>
         <tr>
-            <td></td>
+            
             <td>minimum</td>
             <td>maximum</td>
             <td>2 hr after eating</td>
