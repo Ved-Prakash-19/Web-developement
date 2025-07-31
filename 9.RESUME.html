@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tribute page to Ved prakash</title>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        aside{
+        width: 20%;
+        padding-left: 0.5rem;
+        margin-left: 0.5rem;
+        float: right;   
+        box-shadow: inset 5px 0 5px -5px #29627e;
+        color: #29627e;
+        background-color: aliceblue;
+        }
+    </style>
+    
     
     <!-- Add favicon -->
      <!-- <link rel="icon" href="favicon/favicon45.png" type="image/png"> -->
@@ -15,20 +31,42 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
 
 </head>
+
 <body>
-    <h1><u>VED PRAKASH</u></h1>
-    <P>Pursuing B.Tech from Information Technology.</P>
+    <header>
+        <h1><u>VED PRAKASH</u></h1>
+        <P>Pursuing B.Tech from Information Technology.</P>
+    </header>
+
+    <nav>
+        <a href="#bio">go to Biography</a>
+        <br>
+        <a href="#achievements">view achievements</a>
+        <br>
+        <a href="#resources">go to resources</a>
+    </nav>
+    
     <figure>
-        <img src="images/gaurav.png"
+        <img src="images/ved prakash profile.jpg"
         width="200">
         <figcaption>A photograph of ved prakash</figcaption>
     </figure>
 
-    <h2>Biography</h2>
+    <section>
+    <h2 id="bio">Biography</h2>
     <p style="font-size: 15px;">
+        <!-- <p style="font-family: cursive;"> -->
         Ved prakash is a forward-thinking B.Tech IT student with a with a strong passion for programming and technology. Relentless curiosity for coding, systems, and smart solutions. From diving deep into Data Structures Using C++ to exploring the creative side of Full Stack Web Development and AI, he is building himself for the tech world of tomorrow. Gaurav believes that success isn't just about code — it's about vision, discipline, and the courage to keep evolving and Dedicated to self-growth.</p>
+    </section>
 
-    <h2>Achievements</h2>
+    <aside>
+        <p>Ved prakash is a forward-thinking B.Tech IT student with a with a strong passion for programming and technology.</p>
+    </aside>
+    
+
+    <section>
+        <h2 id="achievements">Achievements</h2>
+        <p style="font-size: 15px;">
     
     <ul>
         <li> Scored a stellar 89% in Class 10th, marking the start of a disciplined academic journey.
@@ -40,18 +78,22 @@
         <li>Started Full Stack Web Development
         Learning using HTML, CSS and JavaScript.</li>
     </ul>
-
+    
     <blockquote>
-    </blockquote>
         <p>🧠 "In the world of code, logic is king — and DSA is the crown."</p>
         <cite>
             -- GAURAV SINGH.
             <a href="https://www.codehelp.in">best DSA course.</a>
         </cite>
     </blockquote>
+        
+    </p>
+    </section>
+    
 
-    <h2>Resources</h2>
-    <p>Learn more about DSA course.</p>
+    <section>
+        <h2 id="resources">Resources</h2>
+        <p>Learn more about DSA course.</p>
     <ul>
         <li>
             <a href="https://www.codehelp.in" target="_blank"> Visit codehelp website</a>
@@ -60,5 +102,7 @@
             <a href="https://in.linkedin.com/in/love-babbar-38ab2887" target="_blank">visit linkedin profile of educator</a>
         </li>
     </ul>
+    </section>
+    
 </body>
 </html>
