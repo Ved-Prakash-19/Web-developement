@@ -1,0 +1,38 @@
+<!-- Specificity :- elements can have multiple css selectors.
+ there is a heirarchy for the weight given to each
+ 
+ 1. !important but (bad practice)
+ 2. inline css style
+ 3.id
+ 4.class
+ 5.tag selectors-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            color: rgb(17, 99, 99) !important 
+            /*important is first priority but bad practice)*/;
+        }
+        p{
+            color: blue;
+        }
+        .realme{
+            color: aliceblue;
+        }
+        #mi{
+            color: yellowgreen;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <p class="realme" id="mi" style="color: rgb(6, 103, 71);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veritatis qui quo voluptates velit, ad similique tempore porro accusantium optio harum quisquam. Ipsum sapiente quam, repudiandae aperiam non libero alias!</p>
+</body>
+</html>
