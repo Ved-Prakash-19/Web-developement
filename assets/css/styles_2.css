@@ -1,0 +1,68 @@
+body {
+      background-color: #000000;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;  /*fix Display Size*/
+      justify-content: center;
+      padding: 40px;
+      margin-left: auto;
+      /* margin-top: auto;
+      margin-bottom: auto;
+      margin-right: auto; */
+    }
+
+    .course-card {
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      overflow: hidden;
+      width: 340px;
+      /* height: 320px; */
+      color: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .course-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .course-content {
+      padding: 20px;
+    }
+
+    .course-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #e0e0e0;
+    }
+
+    .price-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .new-price {
+      color: #0f7fb7;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .old-price {
+      color: #aaa;
+      text-decoration: line-through; /* isme agar ham chahe to html me bhi del tag ka use kar sakte hai*/
+      font-size: 16px;
+    }
+
+    .discount {
+      background-color: #27ae71;
+      color: rgb(255, 255, 255);
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-size: 15px;
+      /* margin-left: auto; */
+      font-weight: bold;
+      /* color: #f6f4f4; */
+      margin-right: auto;
+    }
