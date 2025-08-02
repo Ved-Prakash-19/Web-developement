@@ -1,5 +1,4 @@
-<style>
-    body {
+body {
       font-family: Arial, sans-serif;
       background-color: #f7f5f5;
       padding: 30px;
@@ -76,4 +75,3 @@
     .links img:hover {
       transform: scale(1.2);
     }
-  </style>
