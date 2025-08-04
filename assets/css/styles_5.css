@@ -1,0 +1,14 @@
+h1{
+    text-shadow: 3px 3px 3px red;
+    text-shadow: 3px 3px 3px red, 5px 5px 5px green;
+    /* This is multiple shadows*/
+}
+
+.box{
+    background-color: aqua;
+    height: 200px;
+    width: 180px;
+    box-shadow: 10px 10px 10px greenyellow, 10px 10px 15px red;
+    color: rgb(2, 2, 62);
+    box-shadow: 1px 1px 1px greenyellow, 1px 1px 1px red; /* add border using shadows*/
+}
