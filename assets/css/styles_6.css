@@ -11,3 +11,12 @@
     min-height: 100px;  /* isme box content ke hisaab se fit hoga*/
     min-width: 100px;
 }
+
+#ved{
+    height: 50px;
+    border: 1px solid black;
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+}
