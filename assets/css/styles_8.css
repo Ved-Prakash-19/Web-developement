@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Static prop */
+
+.box{
+    position: static;           /*By default position is called static position */
+    border: 1px solid black;
+    background-color: aquamarine;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;   /* not any effect of this prop like top , bottom , left, right etc */
+}
+
+
+/* Relative Prop */
+
+.rel_prop{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: aquamarine;
+
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#rel_prop2{
+    position: relative;
+    top: 150px;
+    left: 150px;
+}
+
+
+/* Fixed prop */
+
+#fixed_prop2{
+    position: fixed;
+}
+
+div{
+    display: inline-block;
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    background-color: chartreuse;
+}
+.wrapper{
+    height: 1000px;   /* vh = viewheight use kar sakte */
+    width: 1000px;    /* vw = viewport use kar sakte */
+    background-color: rgb(39, 218, 218);
+}
+
+
+/* Absolute class */
+
+.box {
+  position: relative;    /* ✅ important */
+  width: 300px;
+  height: 200px;
+  background-color: rgb(21, 113, 144);
+  border: 2px solid rgb(2, 2, 35);
+  margin: 40px;
+  padding: 5px;
+}
+
+.abs-child {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 120px;
+  height: 50px;
+  background-color: tomato;
+  color: rgb(16, 2, 2);
+  padding: 5px;
+}
+/* .box ek normal container hai.
+
+Uske andar .abs-child ko absolute diya gaya hai.
+
+Uska reference milega .box se (kyunki .box ka position: relative hai).
+
+To abs-child box ke top-right corner ke paas place ho jaayega. */
+
+
+
+/* Sticky prop */
+
+ .sticky-bar {
+  position: sticky;
+  top: 0;
+  background-color: rgb(55, 141, 222);
+  padding: 15px;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.content {
+  height: 2000px; /* To enable scrolling */ 
+  padding: 20px;
+} 
