@@ -1,4 +1,12 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
 body {
+    background-color: aquamarine;
   height: 2000px; /*Scroll effect ke liye*/
   font-family: Arial, sans-serif;
 }
@@ -10,15 +18,18 @@ body {
   color: rgb(245, 245, 245);
   padding: 10px;
   font-weight: bold;
+  /* margin: auto; */
 }
 
 /* 1. Static */
 .static {
   background: rgb(28, 190, 28);
   position: static;
+  left: 30px;  /* left top given but not any effect*/
+  top: 50px;
 }
 
-/* 2. Relative */
+/* 2. Relative  --- Practical effect: Box dikhne me niche + right shifted hoga, lekin uske original place ka space page layout me reserve rahega (background white space dikhega). */ 
 .relative {
   background: blue;
   position: relative;
@@ -28,7 +39,7 @@ body {
 
 /* 3. Absolute */
 .container {
-  position: relative; /* Absolute child ke liye positioned parent */
+  position: relative; /*Absolute child ke liye positioned parent*/
   height: 200px;
   border: 2px dashed black;
   margin-top: 20px;
@@ -40,7 +51,7 @@ body {
   right: 20px;
 }
 
-/* 4. Fixed */
+/* 4. Fixed -- Yeh viewport (browser window) ke relative fix ho jaata hai. Scroll karne pe bhi wahi position pe dikhega.*/
 .fixed {
   background: red;
   position: fixed;
@@ -48,7 +59,7 @@ body {
   right: 20px;
 }
 
-/* 5. Sticky */
+/* 5. Sticky-- Yeh element relative ki tarah behave karta hai jab tak user scroll karke uski position threshold na paar kare; uske baad yeh viewport ke ek side (jaise top:0) pe “stick it means chipak” jaata hai. */
 .sticky {
   background: orange;
   position: sticky;
