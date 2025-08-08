@@ -1,0 +1,56 @@
+body {
+  height: 2000px; /*Scroll effect ke liye*/
+  font-family: Arial, sans-serif;
+}
+
+/* Common style for all boxes */
+.box {
+  width: 150px;
+  height: 80px;
+  color: rgb(245, 245, 245);
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* 1. Static */
+.static {
+  background: rgb(28, 190, 28);
+  position: static;
+}
+
+/* 2. Relative */
+.relative {
+  background: blue;
+  position: relative;
+  /* top: 20px; */
+  left: 30px;
+}
+
+/* 3. Absolute */
+.container {
+  position: relative; /* Absolute child ke liye positioned parent */
+  height: 200px;
+  border: 2px dashed black;
+  margin-top: 20px;
+}
+.absolute {
+  background: green;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* 4. Fixed */
+.fixed {
+  background: red;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* 5. Sticky */
+.sticky {
+  background: orange;
+  position: sticky;
+  top: 0;
+}
