@@ -7,7 +7,7 @@
 body{
   background-color: black;
   font-family: 'Segoe UI', sans-serif;
-  display: flex;  
+  display: flex;   /*fix Display Size*/
   justify-content: center;
   align-items: center;
   padding: 100px;

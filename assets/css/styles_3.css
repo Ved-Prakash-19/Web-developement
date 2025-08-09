@@ -1,16 +1,24 @@
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
 body {
       font-family: Arial, sans-serif;
-      background-color: #f7f5f5;
-      padding: 30px;
+      background-color: #9ba5b1;
+      padding: 20px;
     }
     h1, h2 {
-      text-align: center;
+      /* text-align: center;  ---aise bhi ho sakta hai*/
+      display: flex;
+      justify-content: center;
       color: #093150;
     }
     form {
       background: #adbcbc;
       font-size: large;
-      max-width: 600px;
+      max-width: 650px;
       margin: auto;
       padding: 20px;
       border-radius: 8px;
@@ -43,7 +51,7 @@ body {
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
-      /* gap: 60px; */
+      gap: 60px;
     }
     .buttons button {
       padding: 10px 20px;
@@ -56,7 +64,7 @@ body {
       transition: background-color 0.3s;
     }
     .buttons button:hover {
-      background-color: #8d969f;
+      background-color: #13a1dd;
     }
     .links {
       text-align: center;
