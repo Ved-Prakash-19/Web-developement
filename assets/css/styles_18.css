@@ -61,6 +61,19 @@ input{
     border: none;
     margin-bottom: 20px;
     color: white;
+    padding-left: 125px;
+}
+
+.input-box{
+    position: relative;
+}
+
+.input-box .icon{
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    color: #fff;
+    transform: translateY(-50%) /*translateX(280px)*/;
 }
 
 button{
