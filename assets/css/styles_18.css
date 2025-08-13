@@ -14,7 +14,7 @@
 }
 
 .login{
-    border: 1px solid black;
+    border: 1px solid rgb(76, 204, 110);
     width: 400px;
     height: 500px;
     background: url(/assets/images/login\ form\ 1.jpeg);
@@ -71,4 +71,5 @@ button{
     border: none;
     margin: 10px 0;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
