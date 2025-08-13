@@ -2,97 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DSA Supreme 4.0 Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supreme-4.0 Card Project</title>
 
-  <!-- add favicon -->
-<link rel="icon" type="image/png" href="../../assets/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="../../assets/favicon/favicon.svg" />
-<link rel="shortcut icon" href="../../assets/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png" />
-<link rel="manifest" href="../../assets/favicon/site.webmanifest" />
-
-
+    <!-- add favicon -->
+  <link rel="icon" type="image/png" href="../../assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="../../assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="../../assets/favicon/site.webmanifest" />
 
   <style>
-
-    body {
-      background-color: #121212;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      justify-content: center;
-      padding: 40px;
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .course-card {
-      background-color: #1e1e1e;
-      border-radius: 15px;
+    #wrapper{
+      background-color: black;
+      height: 100vh;
+      width: 100vw;
+      border: 2px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .course-card{
+      padding: 20px;
+      border: 1px solid white;
       overflow: hidden;
-      width: 340px;
+      height: 77%;
+      width: 40%;
+      background-color: rgba(32, 32, 32, 0.662);
       color: white;
+      border-radius: 10px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     }
 
-    .course-card img {
-      width: 100%;
+    .course-card img{
       height: auto;
+      width:100%;
+      border-radius: 10px;
     }
 
-    .course-content {
-      padding: 20px;
+    .course-content{
+      padding: 10px; 
     }
 
-    .course-title {
-      font-size: 18px;
+    .course-title{
+      font-size: 28px;
       font-weight: bold;
       margin-bottom: 10px;
       color: #e0e0e0;
     }
 
-    .price-row {
+    .price-row{
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-top: 10px;
-    }
-
-    .new-price {
-      color: #00c8a5;
+      font-size: 25px;
       font-weight: bold;
-      font-size: 18px;
+      color: rgb(16, 77, 156);
     }
 
-    .old-price {
-      color: #aaa;
+    .old-price{
+      color: #838080;
       text-decoration: line-through;
-      font-size: 16px;
+      font-size: 17px;
     }
 
-    .discount {
-      background-color: #00c851;
+    .discount{
+      background-color: #0d853d;
       color: white;
       padding: 4px 10px;
       border-radius: 5px;
-      font-size: 14px;
+      font-size: 18px;
       /*margin-right: auto;*/
-      margin-left: auto;
+      /*margin-left: auto;*/
       font-weight: bold;
     }
+
+
 
   </style>
 </head>
 <body>
-
-  <div class="course-card">
-    <img src="../../assets/images/supreme.webp" alt="DSA Supreme 4.0 Banner" />
-    <div class="course-content">
-      <div class="course-title">Data Structures & Algorithms [Codehelp RED]</div>
-      <div class="price-row">
-        <div class="new-price">₹4100</div>
-        <div class="old-price">₹9000</div>
-        <div class="discount">55% off</div>
+  <div id="wrapper">
+    <div class="course-card">
+      <img src="/assets/images/supreme.webp">
+      <div class="course-content">
+        <div class="course-title">Data Structures & Algorithm <br> [Codehelp RED]</div>
+        <hr>
+        <br>
+        <div class="price-row">
+          <div class="new-price">₹4100</div>
+          <div class="old-price"><del>₹9000</del></div>
+          <div class="discount">55% off</div>
+        </div>
       </div>
     </div>
   </div>
-
+  
 </body>
 </html>
