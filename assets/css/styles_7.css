@@ -1,14 +1,15 @@
 .box{
     background-color: aquamarine;
-    transform: translate(100px, 100px);   /* 1st attribute is horizontal and second is vertical*/
-    /* transform: translateX(100px); */
-    /* transform: translateY(100px); */
+    transform: translate(100px, 100px);   
+    /* 1st attribute is horizontal and second is vertical*/
+    transform: translateX(100px);
+    transform: translateY(100px);
 
-    transform: rotate(45deg);
-    transform: rotate(-45deg);
+    transform: rotate(25deg);
+    transform: rotate(-25deg);
 
     margin: 200px;
-    transform: scale(5, 5);
+    transform: scale(1, 2);
 
     transform: skew(20deg);
     transform: skew(-20deg);

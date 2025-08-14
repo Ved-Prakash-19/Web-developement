@@ -16,7 +16,7 @@
     height: 50px;
     border: 1px solid black;
     overflow: visible;
-    overflow: hidden;
+    overflow: hidden;   
     overflow: scroll;
     overflow: auto;
 }

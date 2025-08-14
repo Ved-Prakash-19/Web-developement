@@ -1,7 +1,6 @@
 h1{
     text-shadow: 3px 3px 3px red;
-    text-shadow: 3px 3px 3px red, 5px 5px 5px green;
-    /* This is multiple shadows*/
+    text-shadow: 3px 3px 3px red, 5px 5px 5px green; /* This is multiple shadows*/
 }
 
 .box{
