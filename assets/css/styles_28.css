@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    /* border: 3px solid rgb(11, 10, 10); */
+    height: 100vh;
+    width: 100vw;       
+    overflow-x: hidden;
+}
+
+.container{
+    /* border: 1px solid rgb(6, 37, 16); */
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+header {
+  text-align: center;
+  padding: 5px;
+  position: relative;
+  margin-bottom: 0.6rem;
+}
+
+header a {
+  position: absolute;
+  left: 25px;
+  top: 20px;
+  text-decoration: underline;
+  color: gray;
+  font-size: 14px;
+}
+
+header h1 {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.search {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+aside{
+        width: 20%;
+        padding-left: 0.5rem;
+        margin-left: 0.5rem;
+        float: right;   
+        box-shadow: inset 5px 0 5px -5px #29627e;
+        color: #29627e;
+        background-color: aliceblue;
+        }
+
+.main_container{
+    border: 1px solid black;
+    padding: 1rem;
+
+}
+
+.date{
+    color: rgb(92, 87, 87);
+    font-size: 0.9rem;
+}
+
+u{
+    color: blue;
+    cursor: pointer;
+}
+
+.header_container_title{
+    margin-top: -0.25em;
+    font-size: 2.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.text_container{
+    line-height: 1.3rem;
+    height: 4rem;
+    border: 1px solid rgb(49, 46, 46);
+}
+
+h2{
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+h3{
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.text_box{
+    border: 1px solid black;
+    max-width: 70%;
+}
+
+.old_tag{
+    border: 1px solid blue;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: rgb(84, 81, 81);
+}
+
+.new_tag{
+    border: 1px solid blue;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: rgb(84, 81, 81);
+}
+
+.list{
+    padding-left: 5rem;
+}
+    
+.unlist{
+    padding-left: 5rem;
+}
