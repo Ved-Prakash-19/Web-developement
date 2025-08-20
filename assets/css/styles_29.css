@@ -1,10 +1,18 @@
 *{
-    margin: 10;
-    padding-right: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
+#wrapper{
+  height: 100vh;
+  width: 100vw;
+  border: 5px solid rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +21,7 @@ body {
   --clr: #005cbf;
 }
 
-.card {
+.card_container {
   position: relative;
   width: 300px;
   height: 350px;
@@ -24,12 +32,12 @@ body {
   transition-delay: 0.5s;
 }
 
-.card:hover {
+.card_container:hover {
   width: 600px;
   transition-delay: 0.5s;
 }
 
-.card .circle {
+.card_container .circle_container {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,7 +49,7 @@ body {
   align-items: center;
 }
 
-.card .circle::before {
+.card_container .circle_container::before {
   content: "";
   position: absolute;
   top: 30;
@@ -57,7 +65,7 @@ body {
   filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
 }
 
-.card:hover .circle::before {
+.card_container:hover .circle_container::before {
   transition-delay: 0.5s;
   width: 100%;
   height: 100%;
@@ -65,21 +73,21 @@ body {
   background: var(--clr);
 }
 
-.card .circle .logo {
+.card_container .circle_container .logo {
     border-radius: 50%;
     object-fit: cover;
   position: relative;
-  width: 348px;
+  width: 350px;
   transition: 0.5s;
   transition-delay: 0.5s;
 }
 
-.card:hover .circle .logo {
+.card_container:hover .circle_container .logo {
   transform: scale(0);
   transition-delay: 0s;
 }
 
-.card .product_img {
+.card_container .product_img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -88,7 +96,7 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.card:hover .product_img {
+.card_container:hover .product_img {
   transition-delay: 0.75s;
   top: 25%;
   left: 75%;
@@ -96,7 +104,7 @@ body {
   transform: translate(-50%, -50%) scale(1) rotate(15deg);
 }
 
-.card .content {
+.card_container .content {
   position: absolute;
   width: 50%;
   left: 20%;
@@ -106,25 +114,25 @@ body {
   visibility: hidden;
 }
 
-.card:hover .content {
+.card_container:hover .content {
   transition-delay: 0.75s;
   opacity: 1;
   visibility: visible;
   left: 20px;
 }
 
-.card .content h2 {
+.card_container .content h2 {
   color: #fff;
   text-transform: uppercase;
   font-size: 2.5em;
-  line-height: 1em;
+  line-height: 2em;
 }
 
-.card .content p {
+.card_container .content p {
   color: #fff;
 }
 
-.card .content a {
+.card_container .content a {
   position: relative;
   color: #fff;
   background: #d52b1e;
@@ -133,5 +141,5 @@ body {
   display: inline-block;
   text-decoration: none;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 30px;
 }
