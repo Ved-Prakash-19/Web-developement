@@ -1,0 +1,19 @@
+:root{
+    --glow-pink:#ea26d0;  /* global variable creation in root element and is variable ko ham is css me kisi bhi class ke andar apply/use kar sakte hai*/
+}
+
+
+.container{
+    border: 1px solid black;
+    background-color: aquamarine; /* pahle ye wala bg tha but mai jab root element pe variable create kiya and niche use kiya to ye change ho gaya glow pink me*/
+    height: 300px;
+    width: 300px;
+    background-color: var(--glow-pink);
+}   
+
+.box{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: yellow;
+    --glow-pink :#ea26d0; /*is box class ke bahar mai ye local variable use nhi kar sakta  b/c this is local variable use only in specific box*/
+    color: var(--glow-pink);  
+}
