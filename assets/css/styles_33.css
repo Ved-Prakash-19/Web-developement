@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button{
+    background-color: rgb(240, 27, 27);
+    padding: 0.7rem 2rem;
+    color: white;
+    font-size: 22px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px 0px rgb(138, 131, 131);
+    position: relative;  /* Button ko relative banaya, taaki andar ka pseudo-element (::before) isi button ke andar position ho. */
+    cursor: pointer;
+    z-index: 1;
+}
+
+.button::before{  /*Ye ek pseudo-element hai jo button ke text se pehle render hota hai.*/
+    content: "";   /* Iske bina pseudo-element dikhai hi nahi deta. Ye ek khaali box banata hai.*/
+    background-color: black;
+    position: absolute;   /*Ab ye button ke andar free move kar sakta hai, kyunki parent (.button) relative hai.*/
+    inset: 0;   /*Matlab top:0; right:0; bottom:0; left:0; → Ye pura button cover karega.*/
+    transform: scaleX(0);
+    transform-origin: left;  /*Animation ka starting point left side hoga. Matlab effect left se right chalega.*/
+    transition: transform 1s;  /*Jab bhi transform badlega, voh 1 second mein smoothly animate hoga.*/
+    z-index: -1;
+}
+
+.button:hover::before{
+    transform: scaleX(1);  /*Jaise hi hover karte ho, pseudo-element full width le leta hai left se right, aur kala color button pe spread ho jaata hai. Transition ki wajah se ye smooth wipe animation ban jaata hai.*/
+}
