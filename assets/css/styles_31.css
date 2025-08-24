@@ -1,0 +1,53 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid black;
+    /* padding: 5px; */
+}
+
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: yellow;
+    border: 3px solid black;
+    display: flex;
+    margin: 0 30px;
+    margin-top: 10px;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border: 2px solid black;
+    background-color: aqua;
+
+    /* add transition property */
+    transition: 1.5s;
+
+
+    /* transition longhand property */
+    /* transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 1s; */
+
+
+    /* Apply shorthand property */
+    /* transition: background-color   1s   ease   2s; */
+    /* transition: all 1s ease-in 1s; */
+    /* transition: all 1s cubic-bezier(1,-0.7, 0, 1.81) 1s; */
+    transition: all 1s ease-out 1s;
+}
+
+.box:hover{
+    background-color: rgb(14, 198, 136);
+    transform: scale(1.5) translateX(700px) rotate(180deg);
+}
