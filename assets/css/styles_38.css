@@ -5,9 +5,13 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    --bgOrange: #f32121;
+}
+
 #wrapper{
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -107,21 +111,29 @@
     margin-top: 1rem;
     width: 70%;
     font-weight: 500;
-    color: rgb(10, 82, 124);
+    color: rgb(5, 27, 40);
 }
 
 .button{
     background-color: rgb(240, 27, 27);
-    padding: 0.7rem 2.3rem;
-    width: 150px;
-    height: 50px;
+    padding: 0.5rem 1rem;
+    width: 110px;
+    height: 40px;
     color: white;
-    font-size: 22px;
+    font-size: 15px;
     border-radius: 5px;
     box-shadow: 5px 5px 6px 0px rgb(138, 131, 131);
     position: relative;  /* Button ko relative banaya, taaki andar ka pseudo-element (::before) isi button ke andar position ho. */
     cursor: pointer;
     z-index: 1;
+}
+
+#btn{           /*for special hire me property*/
+    padding: 0.8rem 1.7rem;
+    width: 120px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
 }
 
 .button::before{  /*Ye ek pseudo-element hai jo button ke text se pehle render hota hai.*/
@@ -147,10 +159,10 @@
 .faded_text{
     position: absolute;
     user-select: none;
-    font-size: 5em;
-    color: rgb(186, 184, 184);
+    font-size: 6em;
+    color: rgb(190, 190, 190);
 
-    bottom: -9%;
+    bottom: -18.9%;
     left: -1%;
     font-weight: bold;
     transition: all 3s;
@@ -304,9 +316,172 @@
     
 }
 
+    /*PROJECT SECTION*/
 
 
+.project_section{
+    background-color: rgb(223, 223, 223);
+    margin-top: 4rem;
+}
 
+.project_heading{
+    color: var(--bgOrange);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px;
+    
+}
 
+.project_container{
+    max-width: 968px;
+    margin: 0 auto;
+    padding: 3rem 0;
 
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
 
+.project_card{
+    width: 90%;
+    height: 500px;
+    background-image: url(/assets/images/Portfolio_project_image/Project1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    box-shadow: 0px 0px 40px #1f1f1f;
+}
+
+.project_card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.6s;
+    z-index: 1;
+}
+
+.project_card:hover::before{
+    transform: scaleX(1);
+}
+
+.project_card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #1f1f1f9a;
+    transform: scaleX(1);
+    z-index: 0;
+}
+
+.project_number{
+    position: absolute;
+    font-size: 180px;
+    font-weight: 600;
+    color: white;
+    z-index: 1;
+    display: none;      /*opacity:0*/
+}
+
+.project_card:hover .project_number{
+    display: block;   /*opacity:1*/
+}
+
+.project_number_odd{
+    right: -40px;
+    top: -45px;
+
+}
+
+.project_number_even{
+    left: -40px;
+    top: -45px;
+}
+
+.project_content{
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    color: white;
+    padding: 2em;
+    bottom: 20%;
+    z-index: 1;
+    gap: 1em;
+    transition: all 0.4s;
+}
+
+.project_content_left{
+    left: 10%;
+}   
+
+.project_content_right{
+    right: 10%;
+}
+
+.project_skill_icon_container{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project_skills{
+    width: 40px;
+}
+
+.content_heading{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.content_subheading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.button_group{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+
+}
+
+.button-project:hover{
+    border: none;
+}
+
+.icon{
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+.icon:hover{
+    color: var(--bgOrange);
+}
+
+.project_card:hover .project_content{
+    transform: scale(1.1);
+}
+
+#project1{
+    background: url(/assets/images/Portfolio_project_image/Project1.png);
+}
+#project2{
+    margin-left: 60px;
+    background: url(/assets/images/Portfolio_project_image/Project2.png);
+}
+#project3{
+    background: url(/assets/images/Portfolio_project_image/Project3.png);
+}
+#project4{
+    margin-left: 60px;
+    background: url(/assets/images/Portfolio_project_image/Project4.png);
+} 
