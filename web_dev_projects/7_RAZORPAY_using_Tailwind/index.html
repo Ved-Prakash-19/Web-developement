@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RazorPay |@Ved Prakash</title>
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="output.css">
 </head>
+
 <body>
-    <h1 class="bg-pink-600 text-6xl text-white">Tailwind css setup with cli</h1>
+    <!-- NavBar -->
+    <nav class="bg-deep-blue">
+        <div class="relative w-[1080px] mx-auto flex items-center justify-between">
+
+            <!-- logo -->
+            <a href="#" class="cursor-pointer py-7 pl-7.5">
+                <img src="./razorpay_images/logo-razorpay.svg" width="125px" height="30px" alt="logo">
+            </a>
+
+            <ul class="flex space-x-7.5">
+                <li
+                    class="text-white font-mullish py-7 hover:text-light-blue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Payments</a>
+                    <div
+                        class="absolute bottom-0 w-full h-1 bg-light-blue hidden transition-all duration-200 group-hover:block">
+                    </div>
+
+                </li>
+
+                <li
+                    class="text-white font-mullish py-7 hover:text-light-blue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Banking Plus</a>
+                    <div
+                        class="absolute bottom-0 w-full h-1 bg-light-blue hidden transition-all duration-200 group-hover:block">
+                    </div>
+
+                </li>
+
+                <li
+                    class="text-white font-mullish py-7 hover:text-light-blue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Use Cases</a>
+                    <div
+                        class="absolute bottom-0 w-full h-1 bg-light-blue hidden transition-all duration-200 group-hover:block">
+                    </div>
+
+                </li>
+
+                <li
+                    class="text-white font-mullish py-7 hover:text-light-blue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Help & Docs</a>
+                    <div
+                        class="absolute bottom-0 w-full h-1 bg-light-blue hidden transition-all duration-200 group-hover:block">
+                    </div>
+
+                </li>
+
+                <li
+                    class="text-white font-mullish py-7 hover:text-light-blue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Partners</a>
+                    <div
+                        class="absolute bottom-0 w-full h-1 bg-light-blue hidden transition-all duration-200 group-hover:block">
+                    </div>
+
+                </li>
+
+                <li
+                    class="text-white font-mullish py-7 hover:text-light-blue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Pricing</a>
+                    <!-- <div class="absolute bottom-0 w-full h-1 bg-light-blue hidden transition-all duration-200 group-hover:block"></div> -->
+
+                </li>
+
+                <div class="flex space-x-6 justify-center items-center">
+                    <img src="./razorpay_images/indian-flag.jpg" class="h-[20px] w-[28px]" alt="indian-flag" />
+
+                    <button
+                        class="py-3 px-5 font-mullish text-white border-light-blue border rounded-sm text-xs font-bold cursor-pointer">
+                        Log in
+                    </button>
+
+                    <button
+                        class="py-3 px-4 font-mullish rounded-sm text-sm font-bold bg-white  text-light-blue-300 border transition-all duration-200 hover:text-light-blue-500 cursor-pointer">
+                        Sign up
+                    </button>
+                </div>
+
+            </ul>
+
+
+
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-deep-blue">
+
+        <div class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto pl-1.5">
+            <!-- left part -->
+            <div class="space-y-8 w-10/18">
+                <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white">Power your finance, grow your business</h1>
+                <div class="w-6 h-1 bg-white"></div>
+                <p class="font-mullish text-[20px] leading-7 text-white opacity-70">
+                    Accept payments from customers. Automate payouts to vendors & employees. Never run out of working
+                    capital.
+                </p>
+                <button class="bg-light-blue text-white rounded-md font-mullish font-bold hover:bg-light-blue-500 transition-all duration-200 py-[15px] px-[10px] cursor-pointer">Sign Up Now</button>
+            </div>
+            <!-- image right part -->
+            <img src="./razorpay_images/hero-section-image.jpg" alt="hero_image" class="w-full max-w-[630px] pl-8">
+        </div>
+
+        <!-- Triangular_shape_part -->
+        <div class="absolute left-0 right-0 w-full">
+            <img src="./razorpay_images/hero-shape-triangular.svg" alt="Triangular_shape_part"
+            class="left-0 right-0 w-full">
+        </div>
+
+    </section>
 </body>
+
 </html>
